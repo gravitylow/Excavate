@@ -10,7 +10,9 @@ public class Excavate extends JavaPlugin {
     public Map<Player, Boolean> togglet = new HashMap<Player,Boolean>();
     public Map<Player, Integer> toggletl = new HashMap<Player,Integer>();
     public Map<Player, Boolean> togglew = new HashMap<Player,Boolean>();
+   
     
+    @Override
     public void onDisable() {
 
     }

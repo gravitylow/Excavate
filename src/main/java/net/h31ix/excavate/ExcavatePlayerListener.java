@@ -28,26 +28,26 @@ public class ExcavatePlayerListener implements Listener {
             {
                 Location loc = player.getLocation();
                 loc.getBlock().setType(Material.AIR);
-                Block b = loc.getBlock().getFace(BlockFace.UP);
-                Block j = b.getFace(BlockFace.DOWN);
+                Block b = loc.getBlock().getRelative(BlockFace.UP);
+                Block j = b.getRelative(BlockFace.DOWN);
                 b.setType(Material.AIR);
-                b.getFace(BlockFace.EAST).setType(Material.AIR);
-                b.getFace(BlockFace.NORTH).setType(Material.AIR);
-                b.getFace(BlockFace.SOUTH).setType(Material.AIR);
-                b.getFace(BlockFace.WEST).setType(Material.AIR);
-                b.getFace(BlockFace.NORTH_EAST).setType(Material.AIR);
-                b.getFace(BlockFace.NORTH_WEST).setType(Material.AIR);
-                b.getFace(BlockFace.SOUTH_EAST).setType(Material.AIR);
-                b.getFace(BlockFace.SOUTH_WEST).setType(Material.AIR);
+                b.getRelative(BlockFace.EAST).setType(Material.AIR);
+                b.getRelative(BlockFace.NORTH).setType(Material.AIR);
+                b.getRelative(BlockFace.SOUTH).setType(Material.AIR);
+                b.getRelative(BlockFace.WEST).setType(Material.AIR);
+                b.getRelative(BlockFace.NORTH_EAST).setType(Material.AIR);
+                b.getRelative(BlockFace.NORTH_WEST).setType(Material.AIR);
+                b.getRelative(BlockFace.SOUTH_EAST).setType(Material.AIR);
+                b.getRelative(BlockFace.SOUTH_WEST).setType(Material.AIR);
                 j.setType(Material.AIR);
-                j.getFace(BlockFace.EAST).setType(Material.TORCH);
-                j.getFace(BlockFace.NORTH).setType(Material.AIR);
-                j.getFace(BlockFace.SOUTH).setType(Material.AIR);
-                j.getFace(BlockFace.WEST).setType(Material.AIR);
-                j.getFace(BlockFace.NORTH_EAST).setType(Material.AIR);
-                j.getFace(BlockFace.NORTH_WEST).setType(Material.AIR);
-                j.getFace(BlockFace.SOUTH_EAST).setType(Material.AIR);
-                j.getFace(BlockFace.SOUTH_WEST).setType(Material.AIR);            
+                j.getRelative(BlockFace.EAST).setType(Material.TORCH);
+                j.getRelative(BlockFace.NORTH).setType(Material.AIR);
+                j.getRelative(BlockFace.SOUTH).setType(Material.AIR);
+                j.getRelative(BlockFace.WEST).setType(Material.AIR);
+                j.getRelative(BlockFace.NORTH_EAST).setType(Material.AIR);
+                j.getRelative(BlockFace.NORTH_WEST).setType(Material.AIR);
+                j.getRelative(BlockFace.SOUTH_EAST).setType(Material.AIR);
+                j.getRelative(BlockFace.SOUTH_WEST).setType(Material.AIR);            
             }
         }
     }
